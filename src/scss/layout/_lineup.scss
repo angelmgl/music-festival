@@ -1,0 +1,64 @@
+.lineup {
+    padding: $gap 0;
+    background-color: $pink;
+
+    h3,
+    p {
+        text-align: center;
+        color: $white;
+    }
+
+    .day {
+        text-transform: uppercase;
+        margin: $gap 0;
+    }
+}
+
+.schedule {
+    @include tablet {
+        @include grid(2, $gap);
+    }
+
+    .stage {
+        padding: $gap / 2 0;
+    }
+
+    .stage-name {
+        color: $dark;
+        font-size: 2rem;
+        font-weight: $tiny;
+
+        &::after {
+            content: "";
+            height: 20rem;
+            width: 10rem;
+            display: block;
+            margin: 2rem auto 0;
+            background-size: 20rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+.edm .stage-name {
+    &::after {
+        background-image: url("../../src/img/icono_edm.png");
+    }
+}
+
+.rock .stage-name {
+    &::after {
+        background-image: url("../../src/img/icono_rock.png");
+    }
+}
+
+.hours {
+    li {
+        padding: $gap / 2;
+
+        &:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}

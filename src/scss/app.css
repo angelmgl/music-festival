@@ -417,6 +417,18 @@ h3 {
   }
 }
 
+.bg-green {
+  background-color: #4cb8b3;
+}
+
+.bg-yellow {
+  background-color: #fef46e;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 .header {
   background-color: #4cb8b3;
 }
@@ -576,5 +588,68 @@ h3 {
 
 .about-content p {
   line-height: 1.5;
+}
+
+.lineup {
+  padding: 5rem 0;
+  background-color: #f53756;
+}
+
+.lineup h3,
+.lineup p {
+  text-align: center;
+  color: #f1f1f2;
+}
+
+.lineup .day {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media only screen and (min-width: 786px) {
+  .schedule {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.schedule .stage {
+  padding: 2.5rem 0;
+}
+
+.schedule .stage-name {
+  color: #010203;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.schedule .stage-name::after {
+  content: "";
+  height: 20rem;
+  width: 10rem;
+  display: block;
+  margin: 2rem auto 0;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.edm .stage-name::after {
+  background-image: url("../../src/img/icono_edm.png");
+}
+
+.rock .stage-name::after {
+  background-image: url("../../src/img/icono_rock.png");
+}
+
+.hours li {
+  padding: 2.5rem;
+}
+
+.hours li:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=app.css.map */
