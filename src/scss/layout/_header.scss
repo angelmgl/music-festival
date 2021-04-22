@@ -1,0 +1,41 @@
+.header {
+    background-color: $green;
+
+    .header-content {
+        padding: $gap / 2 0;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            color: $white;
+            text-align: center;
+
+            @include tablet {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+
+    a {
+        color: $white;
+        font-size: 2rem;
+
+        &:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

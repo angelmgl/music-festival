@@ -382,16 +382,94 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
 }
 
+@media only screen and (min-width: 786px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 h2 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
+}
+
+@media only screen and (min-width: 786px) {
+  h2 {
+    font-size: 3.6rem;
+  }
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 786px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.header {
+  background-color: #4cb8b3;
+}
+
+.header .header-content {
+  padding: 2.5rem 0;
+}
+
+@media only screen and (min-width: 786px) {
+  .header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header .header-content h1 {
+  margin-bottom: 1rem;
+  color: #f1f1f2;
+  text-align: center;
+}
+
+@media only screen and (min-width: 786px) {
+  .header .header-content h1 {
+    margin-bottom: 0;
+  }
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-nav a {
+  color: #f1f1f2;
+  font-size: 2rem;
+}
+
+.main-nav a:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.main-nav a:hover {
+  color: #fef46e;
 }
 /*# sourceMappingURL=app.css.map */
