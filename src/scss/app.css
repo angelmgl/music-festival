@@ -537,4 +537,44 @@ h3 {
     font-size: 2rem;
   }
 }
+
+.about {
+  padding: 5rem 0;
+}
+
+@media only screen and (min-width: 786px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about .about-image {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 786px) {
+  .about .about-image {
+    margin-bottom: 0;
+  }
+}
+
+.about-content h2 {
+  font-size: 3rem;
+}
+
+.about-content .date {
+  color: #f53756;
+  font-weight: 700;
+}
+
+.about-content p {
+  line-height: 1.5;
+}
 /*# sourceMappingURL=app.css.map */

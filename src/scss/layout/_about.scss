@@ -1,0 +1,31 @@
+.about {
+    padding: $gap 0;
+
+    @include tablet {
+        @include grid(2, 2rem);
+        align-items: center;
+    }
+
+    .about-image {
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-content {
+    h2 {
+        font-size: 3rem;
+    }
+
+    .date {
+        color: $pink;
+        font-weight: $bold;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
