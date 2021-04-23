@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock & EDM Festival</title>
-        <link rel="stylesheet" href="src/scss/app.css" />
+        <!--<link rel="preload" href="build/css/app.css" as="style" />-->
+        <link rel="stylesheet" href="build/css/app.css" />
+        <!-- <link rel="stylesheet" href="src/scss/app.css" /> -->
     </head>
     <body>
         <header class="header">
@@ -37,7 +39,7 @@
 
         <div class="about container">
             <div class="about-image">
-                <img src="/src/img/imagen_vocalista.jpg" alt="Vocalista" />
+                <img src="/build/img/imagen_vocalista.webp" alt="Vocalista" />
             </div>
             <div class="about-content">
                 <h2>Rock & EMD Festival</h2>
@@ -50,12 +52,13 @@
             </div>
         </div>
 
+        <!-- lineup section start -->
         <div class="lineup">
             <h3>Line Up</h3>
 
             <p class="day">Viernes 21</p>
 
-            <div class="container schedule">
+            <div class="container schedule"><!-- day 1 start -->
                 <div class="stage rock bg-yellow">
                     <p class="stage-name">Escenario Rock</p>
 
@@ -80,11 +83,11 @@
                         <li><span class="bold">17:00 |</span> Audien</li>
                     </ul>
                 </div>
-            </div>
+            </div><!-- day 1 end -->
 
             <p class="day">Sábado 22</p>
 
-            <div class="container schedule">
+            <div class="container schedule"><!-- day 2 start -->
                 <div class="stage rock bg-green">
                     <p class="stage-name">Escenario Rock</p>
 
@@ -109,7 +112,20 @@
                         <li><span class="bold">17:00 |</span> Sardini EJ</li>
                     </ul>
                 </div>
-            </div>
+            </div><!-- day 2 end -->
         </div>
+        <!-- lineup section end -->
+
+        <!-- gallery section start-->
+        <section class="gallery container">
+            <h3>Galería</h3>
+                <!-- images will be generated here dinamically with js -->
+            <ul class="gallery-images">
+
+            </ul>
+        </section>
+        <!-- gallery section start-->
+
+        <script src="build/js/bundle.js"></script>
     </body>
 </html>

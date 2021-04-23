@@ -2,10 +2,12 @@ const { src, dest, series, watch } = require("gulp");
 const imagemin = require("gulp-imagemin");
 const notify = require("gulp-notify");
 const webp = require("gulp-webp");
+const concat = require("gulp-concat");
 /* const sass = require('gulp-sass'); */
 
 const paths = {
-    img: "src/img/**/*"
+    img: "src/img/**/*",
+    js: "src/js/**/*.js"
 }
 
 //compile sass
@@ -25,9 +27,10 @@ const paths = {
 } */
 
 //listening changes
-/* function watchFiles() {
-    watch("src/scss/app.scss", css);
-} */
+function watchFiles() {
+    //watch("src/scss/app.scss", css);
+    watch(paths.js, javascript);
+} 
 
 // this function compress image
 function images() {
@@ -45,9 +48,18 @@ function towebp() {
         .pipe(notify({ message: "Converted to webp" }));
 }
 
-/* exports.css = css;
-exports.minCss = minCss;
-exports.watchFiles = watchFiles; */
-exports.images = images;
+//minify javascript code
+function javascript() {
+    return src(paths.js)
+        .pipe(concat('bundle.js'))
+        .pipe(dest("./build/js"));
+}
 
-exports.default = series( images, towebp );
+/* exports.css = css;
+exports.minCss = minCss;*/
+exports.watchFiles = watchFiles; 
+exports.images = images;
+exports.towebp = towebp;
+exports.javascript = javascript;
+
+exports.default = series( javascript, images, towebp, watchFiles );
