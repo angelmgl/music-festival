@@ -650,11 +650,11 @@ h3 {
 }
 
 .edm .stage-name::after {
-  background-image: url("../../src/img/icono_edm.png");
+  background-image: url("../img/icono_edm.webp");
 }
 
 .rock .stage-name::after {
-  background-image: url("../../src/img/icono_rock.png");
+  background-image: url("../img/icono_rock.webp");
 }
 
 .hours li {
