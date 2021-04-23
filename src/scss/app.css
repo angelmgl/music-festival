@@ -724,4 +724,82 @@ h3 {
 .g-overlay .btn-close:hover {
   background-color: #d7d7d9;
 }
+
+.tickets {
+  padding: 5rem 0;
+}
+
+.tickets h3 {
+  text-align: center;
+  color: #f1f1f2;
+}
+
+.tickets-container {
+  margin-top: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.plan p {
+  margin-bottom: 2rem;
+  color: #f1f1f2;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.tickets-table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tickets-table thead {
+  background-color: #f53756;
+}
+
+.tickets-table thead th {
+  padding: 1.25rem 0;
+  color: #f1f1f2;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tickets-table tbody {
+  background-color: #f1f1f2;
+}
+
+.tickets-table tbody td {
+  padding: 1.25rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.tickets-table tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+.tickets-table tfoot {
+  background-color: #752f97;
+}
+
+.tickets-table tfoot td {
+  padding: 1.25rem;
+  color: #f1f1f2;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.footer {
+  padding: 1.25rem;
+  background-color: #f53756;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #f1f1f2;
+}
 /*# sourceMappingURL=app.css.map */

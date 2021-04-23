@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock & EDM Festival</title>
-        <!--<link rel="preload" href="build/css/app.css" as="style" />-->
-        <link rel="stylesheet" href="build/css/app.css" />
-        <!-- <link rel="stylesheet" href="src/scss/app.css" /> -->
+        <!--<link rel="preload" href="build/css/app.css" as="style" />
+        <link rel="stylesheet" href="build/css/app.css" />-->
+        <link rel="stylesheet" href="src/scss/app.css" />
     </head>
     <body>
         <header class="header">
@@ -15,9 +15,9 @@
                 <h1>Rock & EDM Festival</h1>
 
                 <nav class="main-nav">
-                    <a href="#">Line Up</a>
-                    <a href="#">Galería</a>
-                    <a href="#">Tickets</a>
+                    <a href="#lineup">Line Up</a>
+                    <a href="#gallery">Galería</a>
+                    <a href="#tickets">Tickets</a>
                 </nav>
             </div>
         </header>
@@ -42,29 +42,32 @@
                 <img src="/build/img/imagen_vocalista.webp" alt="Vocalista" />
             </div>
             <div class="about-content">
-                <h2>Rock & EMD Festival</h2>
+                <h2>Rock & EDM Festival</h2>
                 <p class="date">Julio 2021, Asunción, Paraguay</p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                     modi consequuntur quos dolorum perferendis laboriosam sit,
-                    voluptatem, error nemo, quaerat cum. 
+                    voluptatem, error nemo, quaerat cum.
                 </p>
             </div>
         </div>
 
         <!-- lineup section start -->
-        <div class="lineup">
+        <div class="lineup" id="lineup">
             <h3>Line Up</h3>
 
             <p class="day">Viernes 21</p>
 
-            <div class="container schedule"><!-- day 1 start -->
+            <div class="container schedule">
+                <!-- day 1 start -->
                 <div class="stage rock bg-yellow">
                     <p class="stage-name">Escenario Rock</p>
 
                     <ul class="hours">
                         <li><span class="bold">00:00 |</span> Metallica</li>
-                        <li><span class="bold">22:00 |</span> System of a Down</li>
+                        <li>
+                            <span class="bold">22:00 |</span> System of a Down
+                        </li>
                         <li><span class="bold">20:00 |</span> Limp Bizkit</li>
                         <li><span class="bold">19:00 |</span> Linkin Park</li>
                         <li><span class="bold">18:00 |</span> Slipknot</li>
@@ -83,11 +86,13 @@
                         <li><span class="bold">17:00 |</span> Audien</li>
                     </ul>
                 </div>
-            </div><!-- day 1 end -->
+            </div>
+            <!-- day 1 end -->
 
             <p class="day">Sábado 22</p>
 
-            <div class="container schedule"><!-- day 2 start -->
+            <div class="container schedule">
+                <!-- day 2 start -->
                 <div class="stage rock bg-green">
                     <p class="stage-name">Escenario Rock</p>
 
@@ -95,7 +100,9 @@
                         <li><span class="bold">00:00 |</span> Green Day</li>
                         <li><span class="bold">22:00 |</span> Chimaira</li>
                         <li><span class="bold">20:00 |</span> Mudvayne</li>
-                        <li><span class="bold">19:00 |</span> Avenged Sevenfold</li>
+                        <li>
+                            <span class="bold">19:00 |</span> Avenged Sevenfold
+                        </li>
                         <li><span class="bold">18:00 |</span> Salamandra</li>
                         <li><span class="bold">17:00 |</span> Flow</li>
                     </ul>
@@ -112,19 +119,88 @@
                         <li><span class="bold">17:00 |</span> Sardini EJ</li>
                     </ul>
                 </div>
-            </div><!-- day 2 end -->
+            </div>
+            <!-- day 2 end -->
         </div>
         <!-- lineup section end -->
 
         <!-- gallery section start-->
-        <section class="gallery container">
+        <section class="gallery container" id="gallery">
             <h3>Galería</h3>
-                <!-- images will be generated here dinamically with js -->
-            <ul class="gallery-images">
-
-            </ul>
+            <!-- images will be generated here dinamically with js -->
+            <ul class="gallery-images"></ul>
         </section>
-        <!-- gallery section start-->
+        <!-- gallery section end -->
+
+        <!-- tickets section start -->
+        <section class="tickets bg-green" id="tickets">
+            <h3>Tickets</h3>
+
+            <div class="container tickets-container">
+                <div class="basico plan">
+                    <p>Pase de 1 día</p>
+
+                    <table class="tickets-table">
+                        <thead>
+                            <tr>
+                                <th>Incluye</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Acceso a ambos escenarios.</td>
+                            </tr>
+                            <tr>
+                                <td>Comida y bebida.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>$100</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="premium plan">
+                    <p>Pase de 2 días</p>
+
+                    <table class="tickets-table">
+                        <thead>
+                            <tr>
+                                <th>Incluye</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Acceso a ambos escenarios.</td>
+                            </tr>
+                            <tr>
+                                <td>Comida y bebida.</td>
+                            </tr>
+                            <tr>
+                                <td>Camisa del evento.</td>
+                            </tr>
+                            <tr>
+                                <td>Acceso VIP.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>$250</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- tickets section end -->
+
+        <footer class="footer">
+            <p>
+                Rock & EDM Festival. All rights reserved 2021&copy;
+            </p>
+        </footer>
 
         <script src="build/js/bundle.js"></script>
     </body>
