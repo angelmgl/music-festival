@@ -572,6 +572,7 @@ h3 {
   .about {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     -webkit-box-align: center;
@@ -623,6 +624,7 @@ h3 {
   .schedule {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
@@ -677,6 +679,7 @@ h3 {
   margin-top: 5rem;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   justify-items: center;
@@ -684,6 +687,7 @@ h3 {
 
 @media only screen and (min-width: 786px) {
   .gallery-images {
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
   }
@@ -691,6 +695,7 @@ h3 {
 
 @media only screen and (min-width: 1144px) {
   .gallery-images {
+    -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     gap: 2.5rem;
   }
@@ -741,15 +746,11 @@ h3 {
 
 .tickets-container {
   margin-top: 2.5rem;
-}
-
-@media only screen and (min-width: 786px) {
-  .tickets-container {
-    display: -ms-grid;
-    display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
 }
 
 .plan p {

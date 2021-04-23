@@ -9,7 +9,9 @@
 
 .tickets-container {
     margin-top: $gap / 2;
-    @include grid(2, $gap);
+    @include tablet {
+        @include grid(2, $gap);
+    }
 }
 
 .plan {
